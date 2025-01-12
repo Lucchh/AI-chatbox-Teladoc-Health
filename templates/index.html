@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chatbot Interface</title>
+  
+  <!-- Link to your external CSS in the static folder -->
+  <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="{{ url_for('static', filename='css/style.css') }}"
+  />
+</head>
+<body>
+  <h1>Chatbot Interface</h1>
+  <div id="chatbox">
+      <div id="messages">
+          <p><strong>Chatbot:</strong> Welcome! How can I assist you today?</p>
+      </div>
+      <textarea id="userInput" placeholder="Type your message here..."></textarea>
+      <button id="sendBtn">Send</button>
+  </div>
+
+  <!-- Link to your external JS in the static folder -->
+  <script 
+    src="{{ url_for('static', filename='js/script.js') }}">
+  </script>
+</body>
+</html>
